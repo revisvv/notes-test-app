@@ -1,0 +1,8 @@
+<div class="side-menu">
+    <ul class="notes">
+        <li *ngFor="let note of notes">
+            <a routerLink="/note/{{ note.id }}">{{ note.title }}</a>
+        </li>
+    </ul>
+    <button (click)="add()">Добавить запись</button>
+</div>
